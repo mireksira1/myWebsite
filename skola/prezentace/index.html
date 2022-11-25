@@ -13,7 +13,6 @@
 <style>
     body{
         font-family: 'Poppins', sans-serif;
-        background-color: #0e0e0e;
         color: aliceblue;
         text-transform: uppercase;
     }
@@ -33,14 +32,14 @@
     h1{
         font-size: 4em;
     }
-    .sectionos{
+    #sectionos{
         border: 3px;
         border-color: aliceblue;
         border-radius: 5px;
         border-style: solid;
         padding: 10px;
     }
-    .os_ps{
+    #os_ps{
         border: 3px;
         border-color: aliceblue;
         border-radius: 5px;
@@ -49,25 +48,68 @@
         font-size: 2.5em;
         padding: 10px;
     }
+    button{
+        width: 10em;
+        color: aliceblue;
+        height: 3em;
+        margin-top: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover{
+        opacity: 0.8;
+    }
 </style>
-<body>
+<body id="web" style="background-color: rgb(14, 14, 14);">
     <div class="container">
-        <h1>Prezentace</h1>
-        <div class="sectionos">
-            <h2 class="os_ps">OS/PS</h2>
+        <h1 id="text">Prezentace</h1>
+        <button style="background-color:burlywood; margin-bottom: 10px;" onclick="theme_change()" id="theme_changer_btn">Light Theme</button>
+        <div id="sectionos">
+            <h2 id="os_ps">OS/PS</h2>
             <div>
                 <span class="material-symbols-outlined">picture_as_pdf</span>
-                <a href="/skola/prezentace/prezentace/CHARAKTERISTIKA VÍCEÚLOHOVÝCH OS.pdf">Charakteristika víceúlohových OS</a><br>
+                <a href="/skola/prezentace/files/CHARAKTERISTIKA VÍCEÚLOHOVÝCH OS.pdf">Charakteristika víceúlohových OS</a><br>
             </div>
             <div>
                 <span class="material-symbols-outlined">picture_as_pdf</span>
-                <a href="/skola/prezentace/prezentace/CISC & RISC ROZDÍLY.pdf">Cisc & Risc rozdíly</a><br>
+                <a href="/skola/prezentace/files/CISC & RISC ROZDÍLY.pdf">Cisc & Risc rozdíly</a><br>
             </div>
             <div>
                 <span class="material-symbols-outlined">picture_as_pdf</span>
-                <a href="/skola/prezentace/prezentace/Protokoly pro sdílení Šíra.pdf">Protokoly pro sdílení</a><br>
+                <a href="/skola/prezentace/files/Protokoly pro sdílení Šíra.pdf">Protokoly pro sdílení</a><br>
             </div>
+        </div>
+        <div class="menu">
+            <button style="background-color:blueviolet;" onclick="location.href='https://mireksira.cz';">Homepage</button>
+            <button style="background-color:chocolate;" onclick="location.href='https://office.com';">office.com</button>
+            <button style="background-color:cornflowerblue" onclick="location.href='https://docs.google.com';"> g.docs</button>
+            <button style="background-color:lightseagreen"">drive</button>
         </div>
     </div>
 </body>
+<script>
+    function theme_change(){
+        console.log("success");
+        var sh = document.getElementById("web");
+
+        if (sh.style.backgroundColor == "rgb(14, 14, 14)") {
+      sh.style.backgroundColor = "rgb(255, 255, 255)";
+      document.getElementById("theme_changer_btn").innerText="Dark Theme"
+      document.getElementById("theme_changer_btn").style.backgroundColor="rgb(14, 14, 14)";
+      document.getElementById("text").style.color="rgb(14, 14, 14)";
+      document.getElementById("os_ps").style.color="rgb(14, 14, 14)";
+      document.getElementById("os_ps").style.borderColor="rgb(14, 14, 14)";
+      document.getElementById("sectionos").style.borderColor="rgb(14, 14, 14)";
+
+    } else if (sh.style.backgroundColor == "rgb(255, 255, 255)") {
+      sh.style.backgroundColor = "rgb(14, 14, 14)";
+      document.getElementById("theme_changer_btn").innerText="Light Theme";
+      document.getElementById("theme_changer_btn").style.backgroundColor="burlywood";
+      document.getElementById("text").style.color="aliceblue";
+      document.getElementById("os_ps").style.color="aliceblue";
+      document.getElementById("os_ps").style.borderColor="aliceblue";
+      document.getElementById("sectionos").style.borderColor="aliceblue";
+    }
+    }
+</script>
 </html>
