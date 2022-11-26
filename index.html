@@ -3,10 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mirek Šíra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1>My projects</h1>
+<style>
+    body{
+        font-family: 'Poppins', sans-serif;
+        color: aliceblue;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    a {
+        text-decoration: none;
+        text-transform: none;
+        color:bisque;
+        font-size: 30px;
+    }
+    a:hover{
+        color:darkgoldenrod;
+    }
+    .container{
+        max-width: 80vw;
+        margin: 0 auto;
+    }
+    h1{
+        font-size: 4em;
+        margin-bottom: 0px;
+    }
+    button{
+        width: 9em;
+        color: aliceblue;
+        height: 3em;
+        margin-top: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: -1em;
+    }
+    button:hover{
+        opacity: 0.8;
+    }
+    p{
+        font-style: italic;
+        font-weight: 300;
+        font-size: 0.8em;
+    }
+</style>
+<body id="web" style="background-color: rgb(14, 14, 14); margin-top: 30vh;">
+    <div class="container">
+        <h1 id="text">Mirek Šíra</h1>
+        <div class="menu">
+            <button style="background-color:blueviolet;" onclick="location.href='mailto:mireksira@proton.me';">mail</button>
+            <button style="background-color:chocolate;" onclick="location.href='https://cz.linkedin.com/in/mirek-%C5%A1%C3%ADra-91a8771bb';">linkedin</button>
+            <button style="background-color:cornflowerblue" onclick="location.href='https://github.com/mireksira1/';">github</button>
+        </div>
+        <p>Making <b style="font-size: 1em;">modern websites</b> easier to navigate since <b style="font-size: 1em;">2019</b></p>
+    </div>
 </body>
 </html>
