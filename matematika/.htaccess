@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Zadejte heslo"
-AuthUserFile /matematika/.htpasswd
-Require valid-user
