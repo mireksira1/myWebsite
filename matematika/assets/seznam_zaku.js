@@ -4,7 +4,6 @@ fetch('/matematika/assets/zaci.json')
     .then(data => {
         // Ziskani lokace pro vlozeni
         const selectElement = document.querySelector('#listjmen');
-
         // Projde data z json a vlozi je do listu
         data.zaci.forEach(item => {
             const optionElement = document.createElement('option');
