@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Kocourkův matematický kvíz</title>
+    <link rel="stylesheet" href="/assets/styly.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Kocourkův matematický kvíz</h1>
+        <img src="/assets/kocour.png" height="100px" />
+        <h2>Nastavení</h2>
+        <div>
+            <form>
+                <label for="plus">Plus</label>
+                <input type="checkbox" id="plus" name="plus">
+                <label for="minus">Minus</label>
+                <input type="checkbox" id="minus" name="minus">
+                <label for="krat">Krát</label>
+                <input type="checkbox" id="krat" name="krat"><br>
+                <button onclick="location.reload()">Restartovat aplikaci</button>
+                <h2>Tvoje Jméno</h2>
+                <select id="listjmen"></select>
+                <h2>Vytvořit příklady</h2>
+                <button type="button" onclick="showProblems()" id="btn-pripraven">Jsem připraven</button>
+                <h3 id="chyba1"></h3>
+            </form>
+        </div>
+    </div>
+    <p>Mgr. Ludmila Šírová</p>
+    <a href="https://www.freepik.com/free-vector/cute-cat-thinking-fish-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated-premium-vector-flat-cartoon-style_20056903.htm#query=grey%20cat&position=6&from_view=search&track=sph" target="_blank">Obrázek od: catalyststuff (Freepik)</a>
+</body>
+<script src="/assets/matematika.js"></script>
+<script src="/assets/seznam_zaku.js"></script>
+</html>
