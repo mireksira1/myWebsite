@@ -1,5 +1,5 @@
 // Nacteni json souboru s jmeny
-fetch('/assets/zaci.json')
+fetch('/matematika/assets/zaci.json')
     .then(response => response.json())
     .then(data => {
         // Ziskani lokace pro vlozeni
