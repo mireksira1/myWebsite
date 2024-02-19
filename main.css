@@ -1,83 +1,160 @@
-body {
-    font-family: 'Poppins', sans-serif;
-    color: aliceblue;
+@media (max-width:680px){
+    body{
+    background: rgb(173,216,230);
+    background: linear-gradient(90deg, rgba(173,216,230,1) 3%, rgba(173,230,178,1) 46%, rgba(173,216,230,1) 100%);
+    width: 90vw;
+    margin: 0 auto;
+}
+.mirek{
+    text-align: center;
+    margin: 2vw 0 2vw 0;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+    color: #8a2be2;
+}
+.container{
+    text-align: center;
+    background-color: #add8e6;
+    color: #8a2be2;
+    font-family: "Kanit", sans-serif;
+    font-size: 1.1rem;
+    border: 1px solid;
+    border-radius: 10px;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+    margin-left: 1vw;
+}
+
+li{
+    padding: 5px;
+}
+
+.menu, .blogBtn{
+    display: inline-block;
+    vertical-align: top;
     text-transform: uppercase;
-    text-align: center;
-    background-color: #0e0e0e;
+    margin: 0 5px 0 5px;
 }
-
-a {
+a{
+    color: #8a2be2;
     text-decoration: none;
-    text-transform: none;
-    font-style: italic;
-    font-weight: 300;
-    font-size: 0.8em;
 }
-
-a:hover {
-    color: #a2a2a2;
-    cursor: pointer;
+.openingText{
+    display: none;
 }
-
-.container {
-    display: grid;
-    place-content: center;
-    text-align: center;
-}
-
-h1 {
-    font-size: 4em;
-    margin-bottom: 0px;
-}
-
-h2 {
-    font-size: 1.5em;
-    margin: 0px;
-}
-
-button {
-    width: 9em;
-    color: aliceblue;
-    height: 3em;
+.main{
     margin-top: 10px;
+    color: #8a2be2;
+    font-family: "Kanit", sans-serif;
+}
+.mainLeft{
+    text-align: center;
+    padding: 10px;
+}
+.mainRight{
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+}
+@media (min-width:681px){
+body{
+    background: rgb(173,216,230);
+    background: linear-gradient(90deg, rgba(173,216,230,1) 3%, rgba(173,230,178,1) 46%, rgba(173,216,230,1) 100%);
+    width: 90vw;
+    margin: 0 auto;
+    color: #8a2be2;
+    font-family: "Kanit", sans-serif;
+}
+.mirek{
+    text-align: left;
+    margin: 1vw 0 1vw 0;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    color: #8a2be2;
+}
+.container{
+    background: #add8e6 url("/assets/bg.png") no-repeat;
+    background-position: right 60px top 0;
+    background-size: contain;
+    color: #8a2be2;
+    font-family: "Kanit", sans-serif;
+    border: 1px solid;
+    border-radius: 10px;
+}
+ul{
+
+    list-style: none;
+    padding-left: 0;
+    margin-left: 1vw;
+}
+
+li{
+    padding: 2px;
+}
+
+.menu{
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    text-transform: uppercase;
+    margin: 0 5px 0 5px;
+}
+.blogBtn{
+    float: right;
+    display: inline-block;
+    vertical-align: top;
+    text-transform: uppercase;
+    margin: 0 15px 0 5px;
+    color: #8a2be2;
+    border: 1px solid #8a2be2;
     border-radius: 5px;
+    border-width: 1.5px;
+}
+a{
+    color: #8a2be2;
+    text-decoration: none;
+}
+a:hover{
+    color: #a576d5;
     cursor: pointer;
-    margin-top: -1em;
 }
-
-button:hover {
-    opacity: 0.8;
+.openingText{
+    margin-top: 5vw;
+    font-size: 1.5rem;
 }
-
-p {
-    font-style: italic;
-    font-weight: 300;
-    font-size: 0.8em;
+.main{
+    display: grid;
+    grid-template-columns: auto auto;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 10px;
+    color: #8a2be2;
+    font-family: "Kanit", sans-serif;
+    
+    gap: 10px;
 }
-
-p>b {
-    font-size: 1em;
+.mainLeft{
+    background-color: #add8e6;
+    border: 1px solid #8a2be2;
+    border-radius: 10px;
+    padding: 10px;
 }
-
-@media only screen and (max-device-width: 470px) {
-    .container {
-        max-width: 95vw;
-    }
-    h1 {
-        font-size: 3.4em;
-        margin-bottom: 0px;
-    }
-    button {
-        max-width: 100px;
-        color: aliceblue;
-        height: 3em;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-top: -1em;
-    }
-    p {
-        font-style: italic;
-        font-weight: 300;
-        font-size: 0.66em;
-    }
+.mainRight{
+    background-color: #add8e6;
+    border: 1px solid #8a2be2;
+    border-radius: 10px;
+    padding: 10px;
+}
+h2{
+    margin: 4px 0 4px 0;
+}
 }
